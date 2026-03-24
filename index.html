@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reaction Time Test – Free Online Reflex Speed Game | Reaction Rush</title>
+  <meta name="description" content="Play a free online reaction time test. Measure your reflex speed, chase a streak, beat your best score, and share your result. Fast, simple, addictive, and mobile-friendly." />
+  <meta name="keywords" content="reaction time test, reflex test, reaction speed test, online reaction game, human benchmark alternative, reflex speed game" />
+  <meta name="author" content="Reaction Rush" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Reaction Time Test – Free Online Reflex Speed Game" />
+  <meta property="og:description" content="Test your reflexes online for free. Beat your best time, build a streak, and share your score." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-placeholder.png" />
+  <meta property="og:url" content="https://reactionrush.online/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reaction Time Test – Free Online Reflex Speed Game" />
+  <meta name="twitter:description" content="Measure your reflex speed online and challenge your best score." />
+  <link rel="canonical" href="https://reactionrush.online/" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Reaction Rush",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any",
+    "description": "A free online reaction time test game that measures reflex speed in milliseconds.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a href="#" class="brand">Reaction Rush</a>
+        <span class="brand-tag">Fast reflexes. One more click.</span>
+      </div>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#game">Play</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free online reaction time test</p>
+          <h1>Measure your reaction time. Chase your streak. Beat your best.</h1>
+          <p class="hero-text">
+            Wait for green, then click instantly. Every round is a split-second battle between focus,
+            nerves, and reflex speed. Simple to start, annoyingly hard to stop.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#game">Play now</a>
+            <a class="btn btn-secondary" href="#about">Learn more</a>
+          </div>
+          <div class="trust-row">
+            <span>Mobile-friendly</span>
+            <span>No signup</span>
+            <span>Free to play</span>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="ad-box">
+            <strong>Top Sponsor / Banner Placeholder</strong>
+            <p>Swap this card for a display ad, affiliate promo, or an internal cross-promo later.</p>
+          </div>
+          <div class="mini-card">
+            <span class="mini-label">Why people keep playing</span>
+            <strong>Personal bests, streaks, ranks, instant retries.</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="game-section" id="game">
+        <div class="game-card">
+          <div class="game-head">
+            <div>
+              <p class="eyebrow">Reaction Rush arena</p>
+              <h2>Can you hit elite reflex speed?</h2>
+            </div>
+
+            <div class="stats-grid" aria-label="Game stats">
+              <div class="stat-card">
+                <span class="stat-label">Best</span>
+                <span class="stat-value" id="bestStat">—</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Average</span>
+                <span class="stat-value" id="avgStat">—</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Streak</span>
+                <span class="stat-value" id="streakStat">0</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Rank</span>
+                <span class="stat-value" id="rankStat">Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="arena arena-idle" id="arena" type="button" aria-live="polite">
+            <div class="arena-content">
+              <span class="arena-badge" id="arenaBadge">Ready</span>
+              <h3 id="arenaTitle">Ready to test your reflexes?</h3>
+              <p id="arenaText">Tap anywhere to begin. Stay calm through the delay, then strike the instant the screen turns green.</p>
+            </div>
+          </button>
+
+          <div class="feedback-row">
+            <div class="feedback-card">
+              <span class="feedback-label">Challenge</span>
+              <strong id="challengeText">Lock in. Your first elite score starts now.</strong>
+            </div>
+            <div class="feedback-card">
+              <span class="feedback-label">Last result</span>
+              <strong id="lastResultText">No completed rounds yet.</strong>
+            </div>
+          </div>
+
+          <div class="control-row">
+            <button class="btn btn-primary" id="startBtn" type="button">Start round</button>
+            <button class="btn btn-secondary" id="shareBtn" type="button">Copy challenge link</button>
+            <button class="btn btn-tertiary" id="resetBtn" type="button">Reset stats</button>
+          </div>
+
+          <div class="inline-ad">
+            <strong>Inline Ad Placeholder</strong>
+            <p>This block is sized for a future banner ad or house promotion between gameplay and content.</p>
+          </div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="panel-card">
+            <h3>Recent attempts</h3>
+            <div class="attempt-list" id="historyList"></div>
+            <p class="muted" id="historyEmpty">No rounds recorded yet. Start clicking.</p>
+          </div>
+
+          <div class="panel-card">
+            <h3>Fast score guide</h3>
+            <ul class="rank-list">
+              <li><span>250+ ms</span><strong>Average</strong></li>
+              <li><span>200–249 ms</span><strong>Sharp</strong></li>
+              <li><span>150–199 ms</span><strong>Fast</strong></li>
+              <li><span>Under 150 ms</span><strong>Elite</strong></li>
+            </ul>
+          </div>
+
+          <div class="panel-card ad-vertical">
+            <strong>Sidebar Ad Placeholder</strong>
+            <p>Use this for a vertical display ad, affiliate graphic, or another mini-game promo.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="content-grid" id="how">
+        <article class="content-card">
+          <p class="eyebrow">How it works</p>
+          <h2>One rule: do not click too early.</h2>
+          <p>
+            The game starts in a tense holding state. After a random delay, the arena flashes green.
+            Your job is to react instantly. Click too soon and the round fails. Click fast enough and
+            you build momentum, climb your streak, and chase a better rank.
+          </p>
+          <p>
+            Instant restarts, visible progress, and personal best tracking are what make reaction tests
+            weirdly addictive. You are never more than one click away from a better score.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <p class="eyebrow">Reaction times</p>
+          <h2>What is a good reaction time?</h2>
+          <p>
+            For most people, an average reaction time is roughly 200 to 250 milliseconds in a simple
+            visual test. Competitive gamers and highly trained players often aim below 200 milliseconds,
+            while very fast results under 150 milliseconds feel elite.
+          </p>
+          <p>
+            This free online reaction time test is a simple way to measure reflex speed, compare your
+            attempts, and challenge friends. It works well on desktop and mobile, making it an easy
+            alternative to more complicated benchmark sites.
+          </p>
+        </article>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
